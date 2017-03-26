@@ -21,6 +21,9 @@ public class Var {
     private List list;
     private String IP;
 
+    private static int B=0;
+    private static int C=0;
+
     public void setList (List s) { list = s;}
 
     public List getList () {return list;}
@@ -55,5 +58,21 @@ public class Var {
 
     public String getnSer (){
         return Ser;
+    }
+
+    public static void setB (int b){
+        B = b;
+    }
+
+    public static int getB (){
+        return B;
+    }
+
+    public static void setC (int c){
+        C = c;
+    }
+
+    public static int getC (){
+        return C;
     }
 }

@@ -38,7 +38,8 @@ public class MyApp extends Application {
         super.onCreate();
         Log.w("MY", "onCreate MyApp");
 
-
+        Var.setB(0);
+        Var.setC(0);
 
         File cacheDir = StorageUtils.getCacheDirectory(getApplicationContext());
         if (cacheDir == null) {

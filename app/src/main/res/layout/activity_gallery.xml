@@ -12,7 +12,7 @@
         android:layout_above="@+id/seekBar_gall"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/seekBar2">
+        android:layout_below="@+id/seekBar_WL">
 
         <com.mrdolphin.red.didroide.TouchImageView
             android:id="@+id/touchIV"
