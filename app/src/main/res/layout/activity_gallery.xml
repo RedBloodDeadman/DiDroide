@@ -12,7 +12,7 @@
         android:layout_above="@+id/seekBar_gall"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/seekBar_WL">
+        android:layout_below="@+id/seekBar_C">
 
         <com.mrdolphin.red.didroide.TouchImageView
             android:id="@+id/touchIV"
@@ -37,7 +37,7 @@
         android:layout_height="100dp" />
 
     <SeekBar
-        android:id="@+id/seekBar_WW"
+        android:id="@+id/seekBar_B"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -46,13 +46,13 @@
         android:layout_alignParentStart="true" />
 
     <SeekBar
-        android:id="@+id/seekBar_WL"
+        android:id="@+id/seekBar_C"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/seekBar_WW" /><!-- set custom progress drawable for the progress -->/>
+        android:layout_below="@+id/seekBar_B" /><!-- set custom progress drawable for the progress -->/>
 
 </RelativeLayout>

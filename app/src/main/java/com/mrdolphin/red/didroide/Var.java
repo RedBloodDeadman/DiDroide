@@ -1,5 +1,7 @@
 package com.mrdolphin.red.didroide;
 
+import android.graphics.Bitmap;
+
 import java.util.List;
 
 /**
@@ -21,8 +23,10 @@ public class Var {
     private List list;
     private String IP;
 
-    private static int B=0;
-    private static int C=0;
+    private static Bitmap bmp;
+
+    private static float B=0;
+    private static float C=0;
 
     public void setList (List s) { list = s;}
 
@@ -60,19 +64,27 @@ public class Var {
         return Ser;
     }
 
-    public static void setB (int b){
+    public static void setB (float b){
         B = b;
     }
 
-    public static int getB (){
+    public static float getB (){
         return B;
     }
 
-    public static void setC (int c){
+    public static void setC (float c){
         C = c;
     }
 
-    public static int getC (){
+    public static float getC (){
         return C;
+    }
+
+    public static void setBitmap (Bitmap b){
+        bmp = b;
+    }
+
+    public static Bitmap getBitmap (){
+        return bmp;
     }
 }

@@ -35,8 +35,8 @@ public class Activity_Gallery extends AppCompatActivity {
 
     private TouchImageView imageV;
     private SeekBar seekBar;
-    private SeekBar seekBar_WW;
-    private SeekBar seekBar_WL;
+    private SeekBar seekBar_B;
+    private SeekBar seekBar_C;
     private ImageLoader imageL;
 
     private String positID;
@@ -46,7 +46,12 @@ public class Activity_Gallery extends AppCompatActivity {
     private int maxI;
     private SharedPreferences mSettings;
 
-    Activity_Gallery.ChangeBC cbc;
+
+
+
+
+    int multipl = 100;
+    double multiplD = 100.0;
 
     Bitmap bitmap1;
     //private String appath = new String(Environment.getExternalStorageDirectory().getPath() + "/Dicom/1/");
@@ -67,12 +72,12 @@ public class Activity_Gallery extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         Var.setB(0);
-        Var.setC(0);
+        Var.setC(1);
 
         imageV = (TouchImageView) findViewById(R.id.touchIV);
         seekBar = (SeekBar) findViewById(R.id.seekBar_gall);
-        seekBar_WW = (SeekBar) findViewById(R.id.seekBar_WW);
-        seekBar_WL = (SeekBar) findViewById(R.id.seekBar_WL);
+        seekBar_B = (SeekBar) findViewById(R.id.seekBar_B);
+        seekBar_C = (SeekBar) findViewById(R.id.seekBar_C);
 
         positID = getIntent().getStringExtra("pos");
         positSer = getIntent().getStringExtra("ser");
@@ -81,10 +86,10 @@ public class Activity_Gallery extends AppCompatActivity {
         seekBar.setMax(maxI);
         final String sernm = getIntent().getStringExtra("seriesName");
 
-        seekBar_WW.setMax(255);
-        seekBar_WW.setProgress(Var.getB());
-        seekBar_WL.setMax(255);
-        seekBar_WL.setProgress(Var.getC());
+        seekBar_B.setMax(510*multipl);
+        seekBar_B.setProgress((int) ((Var.getB())+255)*multipl);
+        seekBar_C.setMax(10*multipl);
+        seekBar_C.setProgress((int)(Var.getC()*multipl));
 
         setTitle("Просмотр серии " + sernm);
 
@@ -126,34 +131,53 @@ public class Activity_Gallery extends AppCompatActivity {
         //imageV.setImageBitmap(bitmap);
 
         BitmapDrawable drawable = (BitmapDrawable) imageV.getDrawable();
-        final Bitmap bitmap0 = drawable.getBitmap();//получение bmp из imageView
-        cbc = new Activity_Gallery.ChangeBC();
-        cbc.execute(bitmap0);
+        Var.setBitmap(drawable.getBitmap());//получение bmp из imageView
+        //cbc = new Activity_Gallery.ChangeBC();
+        //cbc.execute(Var.getBitmap());
+        //BitmapDrawable drawable = (BitmapDrawable) imageV.getDrawable();
+        bitmap1 = ImageWLWWConverter.changeBitmapContrastBrightness(Var.getBitmap(), Var.getC(), Var.getB());
+        imageV.setImageBitmap(bitmap1);
+        Log.d("B", String.valueOf(Var.getB()));
+        Log.d("C", String.valueOf(Var.getC()));
 
-        seekBar_WW.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBar_B.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                Var.setB(i);
-                cbc = new Activity_Gallery.ChangeBC();
-                cbc.execute(bitmap0);
+                Var.setB((float) ((i-(255*multipl))/multiplD));
+                //float ff = (float) (i/10.0);
+                //Log.d("f", String.valueOf(ff));
+                //cbc.execute(Var.getBitmap());
+
+                bitmap1 = ImageWLWWConverter.changeBitmapContrastBrightness(Var.getBitmap(), Var.getC(), Var.getB());
+                imageV.setImageBitmap(bitmap1);
+                Log.d("B", String.valueOf(Var.getB()));
+                Log.d("C", String.valueOf(Var.getC()));
+
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
+                //cbc.cancel(true);
             }
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
             }
         });
 
-        seekBar_WL.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBar_C.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                Var.setC(i);
-                cbc = new Activity_Gallery.ChangeBC();
-                cbc.execute(bitmap0);
+                Var.setC((float) (i/multiplD));
+                //cbc.execute(Var.getBitmap());
+
+                bitmap1 = ImageWLWWConverter.changeBitmapContrastBrightness(Var.getBitmap(), Var.getC(), Var.getB());
+                imageV.setImageBitmap(bitmap1);
+                Log.d("B", String.valueOf(Var.getB()));
+                Log.d("C", String.valueOf(Var.getC()));
+
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
+                //cbc.cancel(true);
             }
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
@@ -190,16 +214,31 @@ public class Activity_Gallery extends AppCompatActivity {
                 //imageLoader.init(ImageLoaderConfiguration.createDefault(mContext)); // Проинициализировали конфигом по умолчанию
                 imageLoader.displayImage(myUrl, imageV, options); // Запустили асинхронный показ картинки
                 //SomeFunctions.openNetImage(myUrl, Activity_Gallery.this, imageV);
+
                 BitmapDrawable drawable = (BitmapDrawable) imageV.getDrawable();
-                Bitmap bitmap = drawable.getBitmap();
-                imageV.setImageBitmap(bitmap);
+                Var.setBitmap(drawable.getBitmap());//получение bmp из imageView
+
+                //Activity_Gallery.ChangeBC cbc = new Activity_Gallery.ChangeBC();
+                //cbc.execute(Var.getBitmap());
+
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
+                //cbc.cancel(true);
             }
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
+                BitmapDrawable drawable = (BitmapDrawable) imageV.getDrawable();
+                Var.setBitmap(drawable.getBitmap());//получение bmp из imageView
+                bitmap1 = ImageWLWWConverter.changeBitmapContrastBrightness(Var.getBitmap(), Var.getC(), Var.getB());
+                imageV.setImageBitmap(bitmap1);
+                Log.d("B", String.valueOf(Var.getB()));
+                Log.d("C", String.valueOf(Var.getC()));
+                //cbc.execute(Var.getBitmap());
+                //Activity_Gallery.ChangeBC cbc = new Activity_Gallery.ChangeBC();
+                //cbc.execute(Var.getBitmap());
             }
+
         });
 
     }
@@ -227,8 +266,8 @@ public class Activity_Gallery extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Bitmap... bitmaps) {
-            bitmap1 = ImageWLWWConverter.doBrightness(bitmaps[0], Var.getB());
-            bitmap1 = ImageWLWWConverter.createContrast(bitmap1, Var.getC());
+            bitmap1 = ImageWLWWConverter.changeBitmapContrastBrightness(bitmaps[0], Var.getC(), Var.getB());
+            //bitmap1 = ImageWLWWConverter.createContrast(bitmap1, Var.getC());
 
             return null;
         }
