@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrdolphin.red.didroide.ActivitySearch">
+
+    <TextView
+        android:text="Фильтры"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewFilter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="36sp" />
+    <!--@+id/textView -->
+
+    <Button
+        android:text="Поиск"
+        android:onClick="onSearchButtonClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonNext"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:layout_toLeftOf="@+id/textView8"
+        android:layout_toStartOf="@+id/textView8" />
+    <!--@+id/button2 -->
+
+    <Button
+        android:text="Вчера"
+        android:onClick="onYesterdayButtonClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonToday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/buttonYesterday"
+        android:textSize="24sp"
+        android:layout_alignRight="@+id/buttonClear"
+        android:layout_alignEnd="@+id/buttonClear" />
+    <!--@+id/button4 -->
+
+    <Button
+        android:text="Очистить"
+        android:onClick="onClearButtonClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonYesterday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/buttonClear"
+        android:textSize="24sp" />
+    <!--@+id/button5 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/buttonNext"
+        android:layout_toEndOf="@+id/buttonNext"
+        android:id="@+id/textViewPatID"
+        android:textSize="24sp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="ID пациента" />
+    <!--@+id/textView7 -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textViewPatID"
+        android:layout_toRightOf="@+id/buttonNext"
+        android:layout_toEndOf="@+id/buttonNext"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/editText4" />
+    <!--@+id/editText4 -->
+
+
+    <TextView
+        android:text="Отделение"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_toRightOf="@+id/buttonToday"
+        android:layout_toEndOf="@+id/buttonToday"
+        android:id="@+id/textView8"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textSize="24sp" />
+    <!--@+id/textView7 -->
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/buttonYesterday"
+        android:id="@+id/spinnerOtd"
+        android:layout_alignRight="@+id/editText4"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_alignBottom="@+id/editText7"
+        android:layout_alignTop="@+id/editText7" />
+    <!--@+id/spinner4 -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText5"
+
+        android:layout_toRightOf="@+id/editText4"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_toEndOf="@+id/editText4" />
+    <!--@+id/editText5 -->
+
+    <CheckBox
+        android:text="CT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxCR"
+        android:layout_alignLeft="@+id/checkBoxCR"
+        android:layout_alignStart="@+id/checkBoxCR"
+        android:id="@+id/checkBoxCT"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox3 -->
+
+    <CheckBox
+        android:text="DX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxCT"
+        android:layout_alignLeft="@+id/checkBoxCT"
+        android:layout_alignStart="@+id/checkBoxCT"
+        android:id="@+id/checkBoxDX"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox4 -->
+
+    <CheckBox
+        android:text="ES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxCR"
+        android:layout_toRightOf="@+id/checkBoxDX"
+        android:layout_toEndOf="@+id/checkBoxDX"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/checkBoxES"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox5 -->
+
+    <CheckBox
+        android:text="MG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxDX"
+        android:layout_alignLeft="@+id/checkBoxES"
+        android:layout_alignStart="@+id/checkBoxES"
+        android:id="@+id/checkBoxMG"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox6 -->
+
+    <CheckBox
+        android:text="MR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBoxDX"
+        android:layout_alignLeft="@+id/checkBoxMG"
+        android:layout_alignStart="@+id/checkBoxMG"
+        android:id="@+id/checkBoxMR"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox7 -->
+
+    <CheckBox
+        android:text="NM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:id="@+id/checkBox9"
+        android:layout_above="@+id/checkBoxMG"
+        android:layout_toRightOf="@+id/checkBoxMG"
+        android:layout_toEndOf="@+id/checkBoxMG"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox9 -->
+
+    <CheckBox
+        android:text="OT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox9"
+        android:layout_alignLeft="@+id/checkBox9"
+        android:layout_alignStart="@+id/checkBox9"
+        android:id="@+id/checkBoxOT"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox10 -->
+
+    <CheckBox
+        android:text="PT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxOT"
+        android:layout_alignLeft="@+id/checkBoxOT"
+        android:layout_alignStart="@+id/checkBoxOT"
+        android:id="@+id/checkBoxPT"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox11 -->
+
+    <CheckBox
+        android:text="RT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxRF"
+        android:layout_alignLeft="@+id/checkBoxRF"
+        android:layout_alignStart="@+id/checkBoxRF"
+        android:id="@+id/checkBoxRT"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox15 -->
+
+    <CheckBox
+        android:text="XA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxXA"
+        android:layout_below="@+id/checkBoxUS"
+        android:layout_alignLeft="@+id/checkBoxUS"
+        android:layout_alignStart="@+id/checkBoxUS"
+        android:textSize="18sp"/>
+    <!--@+id/checkBox20 -->
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker1"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/checkBoxFrom"
+        android:layout_alignLeft="@+id/checkBoxFrom"
+        android:layout_alignStart="@+id/checkBoxFrom"
+        />
+    <!--@+id/datePicker -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/checkBoxCT"
+        android:layout_toRightOf="@+id/spinnerOtd"
+        android:layout_toEndOf="@+id/spinnerOtd" />
+    <!--@+id/editText7 -->
+
+
+    <CheckBox
+        android:text="CR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxCR"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/checkBoxAll"
+        android:layout_alignBottom="@+id/checkBoxAll"
+        android:layout_alignRight="@+id/textViewModality"
+        android:layout_alignEnd="@+id/textViewModality" />
+    <!--@+id/checkBox2 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewModality"
+        android:textSize="24sp"
+        android:text="Модальность"
+        android:layout_marginLeft="106dp"
+        android:layout_marginStart="106dp"
+
+        android:layout_toRightOf="@+id/editText5"
+        android:layout_toEndOf="@+id/editText5" />
+    <!--@+id/textView11 -->
+
+    <CheckBox
+        android:text="Все"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxAll"
+        android:textSize="18sp"
+        android:checked="true"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_alignLeft="@+id/textViewModality"
+        android:layout_alignStart="@+id/textViewModality" />
+    <!--@+id/checkBox -->
+
+    <CheckBox
+        android:text="RF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxRF"
+        android:textSize="18sp"
+        android:layout_below="@+id/editText7"
+        android:layout_alignLeft="@+id/checkBoxDX"
+        android:layout_alignStart="@+id/checkBoxDX" />
+    <!--@+id/checkBox13 -->
+
+    <CheckBox
+        android:text="SC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxSC"
+        android:textSize="18sp"
+        android:layout_above="@+id/checkBoxXA"
+        android:layout_alignLeft="@+id/checkBoxPT"
+        android:layout_alignStart="@+id/checkBoxPT" />
+    <!--@+id/checkBox17 -->
+
+    <CheckBox
+        android:text="US"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxUS"
+        android:textSize="18sp"
+        android:layout_above="@+id/checkBoxRT"
+        android:layout_alignLeft="@+id/checkBoxMR"
+        android:layout_alignStart="@+id/checkBoxMR" />
+    <!--@+id/checkBox18 -->
+
+    <Button
+        android:text="Сегодня"
+        android:onClick="onTodayButtonClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonToday"
+        android:textSize="24sp"
+        android:layout_below="@+id/checkBoxRT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonYesterday"
+        android:layout_alignEnd="@+id/buttonYesterday" />
+    <!--@+id/button3 -->
+
+    <CheckBox
+        android:text="С..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxFrom"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/buttonToday"
+        android:layout_alignBottom="@+id/buttonToday"
+        android:layout_toRightOf="@+id/buttonClear"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        />
+    <!--@+id/checkBox21 -->
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker2"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/checkBoxTo"
+        android:layout_toRightOf="@+id/datePicker1"
+        android:layout_toEndOf="@+id/datePicker1" />
+    <!--@+id/datePicker2 -->
+
+    <CheckBox
+        android:text="По..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxTo"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/checkBoxFrom"
+        android:layout_alignBottom="@+id/checkBoxFrom"
+        android:layout_toRightOf="@+id/checkBoxFrom"
+        android:layout_toEndOf="@+id/checkBoxFrom" />
+    <!--@+id/checkBox22 -->
+
+</RelativeLayout>
