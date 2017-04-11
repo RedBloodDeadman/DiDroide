@@ -2,220 +2,31 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\4b8fd4a69cb5838b181de720be88726d8d19b874\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/denis/ТГКБ5/android projects/DiDroide(Git)/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8a372c4191f80489770a231f7be4820b204b886a">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_4b9a1527410a0c93a6be4018a00042b4809549cc.jar" />
+        sha1="20db86f96a53afd3634d6c4b9c721298a7f6d428">
+        <dex dex="/home/denis/ТГКБ5/android projects/DiDroide(Git)/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ba27501c688185b2f0d69df8b27f774efb1d32cc/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="E:\MD\Android Projects\DiDroide(Git)\app\libs\postgresql-9.3-1103.jdbc3.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/denis/ТГКБ5/android projects/DiDroide(Git)/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/home/denis/ТГКБ5/android projects/DiDroide(Git)/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_cbaac06cec99933ae07372d558a7c36aecbb3c35/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/denis/ТГКБ5/android projects/DiDroide(Git)/app/libs/postgresql-9.3-1103.jdbc3.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="309373613ac03e336e6ff845bccd90af76a0e719">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\postgresql-9.3-1103.jdbc3_2518f54e5c48f10027afde3d6222d8003bb93720.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_f3c94b2e1e05320c9f149c293ee9ed1faa11c7f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\01f582c5c8f61ac581a468e5002e21dede48eec8\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_13e076c6d7af123076f25bc489c7832b7b5e01eb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\2f55824af2b61775b59c94069c28a702c5dc6b6a\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_d67b34651d3f618015f3768bff8551d66d1267f8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.gradle\caches\modules-2\files-2.1\eu.the4thfloor.volley\com.android.volley\2015.05.28\b0b08cc0ac897e596abe6b263a9507cba875b705\com.android.volley-2015.05.28.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b0b08cc0ac897e596abe6b263a9507cba875b705">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\com.android.volley-2015.05.28_69159ad9d4617eb87e56ce7c499d766b67ac115e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\34de9807c3ae3e742ce2d41ccc502f2e801117dc\output\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_5ee6428af3c28a0feb9ff1160de4721ca2e88575.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\66748c401c1299258fa730b462fb0a42e164bd58\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_94e4d34dee09c99f872d7ff184f7492b1c0e3d4b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\867c0d965ab7e9f4d1d49c7537347b3fcea25488\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_6323f04d17a7c42addbb04aabcb94ce3cdb39938.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\6b341025391fc3fd536cf9134354ca49429b26e2\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_a64ac2465270aad28206c94219e8d6951a893252.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\0ed1d721dcdb8627d9445bba547d18d694984629\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e3c7e8ff9f476d0d93ee7b046fbe8037a2b822c0">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_06e44522c72ed99ed34661d79e1dbfc1b37ebed3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.5\442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375\universal-image-loader-1.9.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.5_a8a804303a9283ca4faf0415a09b4165f7e9f33a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\9595f069b57fc60ba093ef6e64373d801cd17333\output\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_4974dd65beac9ba6530b5eb956a7b4a2bf544c91.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\f043053bdf3f89ffbfeb8c08936161ef643d945b\output\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_a2f1c2559293039e633ab9c6a39cd88b25ced356.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\867c0d965ab7e9f4d1d49c7537347b3fcea25488\output\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_6ea35f4b0ea99eeb16fe53060981cdd518a91a24.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\f043053bdf3f89ffbfeb8c08936161ef643d945b\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_044637c61f96111f62f1098ff6e8cd5639e9efa7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\0ed1d721dcdb8627d9445bba547d18d694984629\output\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c07fb99b729345908dda75fadbbf882e300631ff">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_37b5d66fb57cd862b3ac5c73e37330d9e557b316.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\9595f069b57fc60ba093ef6e64373d801cd17333\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_63852c4e206a2a3011efc6351f6438fc11cd9cdf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\01f582c5c8f61ac581a468e5002e21dede48eec8\output\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_47cb8750954b03c53aec003150f68bbb309d7ea4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\b5661371b443317eb574c4d3ff21d80e9315a19f\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_21b2db1881c2ca8b1ba15de8f8149563e767e61a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-android\4.3.5.1\eecbb0b998e77629862a13d957d552b3be58fc4e\httpclient-android-4.3.5.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="eecbb0b998e77629862a13d957d552b3be58fc4e">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\httpclient-android-4.3.5.1_8972519db489a952e9221efca24e113eb11ea382.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\34de9807c3ae3e742ce2d41ccc502f2e801117dc\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_2b68f67ceffb6d00a4b2de7c57a8d9311548e636.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\4c2e4889ce35ab9063c0ebb03f8ac429b3aa7024\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_10a3591488020b21e6b4a94fd0e472ab0cb30e8c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Mr\.android\build-cache\2820ae4aa32517902d38835d66631cd7a1d884d9\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="E:\MD\Android Projects\DiDroide(Git)\app\build\intermediates\pre-dexed\debug\classes_e6cffcf0b2e1319bff5f9294620cb005401a0f4d.jar" />
+        <dex dex="/home/denis/ТГКБ5/android projects/DiDroide(Git)/app/build/intermediates/transforms/dex/debug/folders/1000/2/postgresql-9.3-1103.jdbc3_5fd6d301b97c0f317fad1c0c5ef21ad4733462b3/classes.dex" />
     </item>
 
 </items>
